@@ -3,87 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 – Dynamic Web Fundamentals – Brandon Cazorla</title>
+    <title>Document</title>
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals">
     <meta name="author" content="Brandon Cazorla">
-
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 <body>
     <div class="fullscreen">
         <header>
-            <div class="titlemain">
-                <h1>WDD 131: Dynamic Web fundamentals - <span class="boldtitle">Brandon Cazorla</span></h1>
-                
+            <div class="container-icon">
+                <div class="icon">
+                    <img src="images/icon.png" alt="Company Icon">
+                    <p>Site Name</p>
+                </div>
+
+                <button id="menu-btn">☰</button>
             </div>
-            
-            <ul class="nav">
-                <li>
-                    <a href="https://www.linkedin.com/in/brandoncazorlacosta/">LinkedIn</a>
-                    <a href="https://byupw.instructure.com/.">Canvas</a>
-                    <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
-                    <a href="">Final Project</a>
-                </li>
-            </ul>
+
+            <div class="container-large">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Chamber Project</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+            </div>
+
+            <div class="container-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <hr>
+                    <li><a href="#">Chamber Project</a></li>
+                    <hr>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+            </div>
         </header>
 
         <main>
-            <article>
+            <h1 class="title-large">Home</h1>
+            <div class="grid">
+                <div class="container-article1">
+                    <h1 class="title-home">Home</h1>
+                    <article class="article1">
+                        <h2>About Me</h2>
+                        <p>My name is Brandon Cazorla, i am 24 years old and i live in Argentina, Buenos Aires. I am currently studying Computer Science and also Software deloper, my family consist of my mom and my three dog, they name is Jack, Railey and Rex, they are very kind.</p>
+                    </article>
+                </div>
 
-                <h2 class="title">About Me</h2>
+                <div class="container-article2">
+                    <article class="article2">
+                        <h2>Student Photo</h2>
+                        <img src="images/BrandonProfile.jpg" alt="Profile Pic Student">
+                    </article>
+                </div>
+            </div>
 
-                <section class="section1">
-                    <p>My name is Brandon Cazorla, i am 24 years old and i live in Argentina, Buenos Aires. I am currently studying Computer Science and also Software deloper, my family consist of my mom and my three dog, they name is Jack, Railey and Rex, they are very kind.</p>
+            <div class="container-article3">
+                <article class="article3">
+                    <h2>Web Certificate Courses</h2>
 
-                    <img src="images/BrandonProfile.jpg" alt="Profile image of Brandon Cazorla">
-                </section>
+                    <section class="section-btn">
+                        <button id="all">ALL</button>
+                        <button id="cse">CSE</button>
+                        <button id="wdd">WDD</button>
+                    </section>
 
-                <section class="section2">
-                    <div class="subtitlecontainer">
-                        <h2 class="subtitle">Buenos Aires, Argentina</h2>
-                        <hr>
-                    </div>
+                    <section class="wdd">
+                        <div>WDD 130</div>
+                        <div>WDD 131</div>
+                        <div>WDD 231</div>
+                    </section>
 
-                    <div class="flagsection">
-                        <div class="flag">
-                            <img src="images/argentina.png" alt="Flag of Argentina">
-                            <figcaption>Official Flag of Argentina</figcaption>
+                    <section class="cse">
+                        <div>CSE 110</div>
+                        <div>CSE 111</div>
+                        <div>CSE 210</div>
+                    </section>
+
+                    <section class="all">
+                        <div>WDD 130</div>
+                        <div>WDD 131</div>
+                        <div>WDD 231</div>
+                        <div>CSE 110</div>
+                        <div>CSE 111</div>
+                        <div>CSE 210</div>
+                    </section>
+
+                    <section class="container-icons">
+                        <p>The total credits for course listed above is <span id="totalCredits"></span></p>
+                        <div class="section-icons">
+                            <a href="https://www.linkedin.com/in/brandoncazorlacosta/"><img  src="images/linkedin.png" alt="Link LinkedIn"></a>
+                            <a href="https://github.com/"><img src="images/github.png" alt="Link GitHub"></a>
+                            <a href="https://x.com/?lang=es"><img src="images/x.png" alt="Link X"></a>
                         </div>
+                    </section>
+                    
+                </article>
 
-                        <p>Argentina is a country located in the southern part of South America, known for its diverse geography that stretches from the Andes Mountains to Patagonia and the Pampas. Its capital is Buenos Aires, a vibrant and cultural city. The country is famous for tango, mate, soccer, and its cuisine, especially barbecue.</p>
-                    </div>
+            </div>
 
-                </section>
-            </article>
-
-            <aside>
-                <h2 class="title">Web Dev Resources</h2>
-
-                <section class="section3">
-                    <ul>
-                        <li><a href="https://dev.to/">Dev.to Community</a></li>
-                        <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                        <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                        <li><a href="https://www.udemy.com/">Udemy</a></li>
-                        <li><a href="https://placehold.co/">Image Placeholder</a></li>
-                    </ul>
-                </section>
-            </aside> 
-    </main>
-
+        </main>
 
         <footer>
-            <p>©<span id="currentyear"></span> Brandon Cazorla • Argentina</p>
+            <p>© <span id="currentYear"></span> - Brandon Cazorla - Bs.As, Argentina</p>
             <p id="lastModified"></p>
         </footer>
     </div>
 
-
-
-
-        
-
-    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/date.js"></script>
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/course.js"></script>
 </body>
 </html>
